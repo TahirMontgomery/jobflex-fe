@@ -1,0 +1,18 @@
+@import "/src/styles/variables";
+
+.paper__wrapper {
+  background: $secondary-color !important;
+  padding: 15px 15px 15px 0px;
+  height: 100%;
+  padding-left: 25px;
+
+  .wrapper__header {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary-color;
+  }
+}

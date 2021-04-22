@@ -1,0 +1,31 @@
+.stat {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  max-width: 400px;
+  color: white;
+  border-radius: 10px;
+  min-height: 85px;
+
+  &__left {
+    margin-right: auto;
+
+    h3 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}

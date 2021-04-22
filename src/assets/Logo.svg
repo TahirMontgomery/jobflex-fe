@@ -1,0 +1,6 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo">
+<circle id="Ellipse 1" cx="20" cy="20" r="20" fill="#6095D8"/>
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M22 14V12H18V14H22ZM12 16V27H28V16H12ZM28 14C29.11 14 30 14.89 30 16V27C30 28.11 29.11 29 28 29H12C10.89 29 10 28.11 10 27L10.01 16C10.01 14.89 10.89 14 12 14H16V12C16 10.89 16.89 10 18 10H22C23.11 10 24 10.89 24 12V14H28Z" fill="white"/>
+</g>
+</svg>
