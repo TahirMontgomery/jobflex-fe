@@ -1,0 +1,92 @@
+@import "/src/styles/variables";
+.applicant {
+  position: relative;
+  padding: 18px 30px 0px 30px;
+
+  &__name {
+    h3 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $secondary-text;
+      margin-bottom: 3px;
+      margin-right: auto;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    .favoriteIcon {
+      color: #f2c94c;
+      cursor: pointer;
+    }
+
+    .approveIcon {
+      color: #f06449;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $secondary-text;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info {
+    h4 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.applicant::before {
+  border-right: 4px solid $secondary-color;
+  position: absolute;
+  content: "";
+  height: 100vh;
+  left: 0%;
+  top: 0%;
+}
+
+.applicant::after {
+  border-right: 4px solid $secondary-color;
+  position: absolute;
+  content: "";
+  height: 100vh;
+  right: 0%;
+  top: 0%;
+}
+
+.file {
+  max-height: 100vh;
+  overflow-y: scroll;
+}

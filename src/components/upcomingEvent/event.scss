@@ -1,0 +1,98 @@
+@import "/src/styles/variables";
+
+.event {
+  display: flex;
+  margin: 20px 10px 0px 0px;
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
+    background: green;
+    border-radius: 25px;
+    padding: 10px 0;
+    margin: 0px 15px 0px 0px;
+    color: white;
+
+    h3 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 42px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    h5 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    p {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &__details {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    h5 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+
+    .type {
+      color: white;
+      display: inline;
+      background: $primary-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      padding: 3px 10px;
+      text-align: left;
+      border-radius: 10px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        color: blue;
+        cursor: pointer;
+      }
+    }
+  }
+}

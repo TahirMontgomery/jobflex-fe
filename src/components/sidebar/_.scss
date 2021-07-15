@@ -67,6 +67,7 @@
     &.active,
     &:hover {
       background: $primary-color;
+      cursor: pointer;
       svg {
         color: white !important;
       }

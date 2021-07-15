@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { StatCard, Paper, ActiveJobs } from "jb-components";
+import {
+  StatCard,
+  Paper,
+  ActiveJobs,
+  Upcoming,
+  RecentApplicant,
+} from "jb-components";
 import WorkIcon from "@material-ui/icons/Work";
 import PersonIcon from "@material-ui/icons/Person";
 import ScheduleIcon from "@material-ui/icons/Schedule";
@@ -15,6 +21,32 @@ function Jobs() {
     <div>
       {jobList.map((job, index) => (
         <ActiveJobs key={index} />
+      ))}
+    </div>
+  );
+}
+
+function Events() {
+  let eventList: Number[] = new Array(4).fill(1);
+
+  return (
+    <div>
+      {eventList.map((event, index) => (
+        <Upcoming />
+      ))}
+    </div>
+  );
+}
+
+function Applicants() {
+  let applicantList: Number[] = new Array(4).fill(1);
+
+  return (
+    <div>
+      {applicantList.map((event, index) => (
+        <Grid key={index} item md={3}>
+          <RecentApplicant />
+        </Grid>
       ))}
     </div>
   );
@@ -69,9 +101,27 @@ function Dashboard({ setRoute }: DashboardProps) {
           </Paper>
         </Grid>
         <Grid item md={4}>
-          <Paper title={"Active"}>
-            <Jobs />
-          </Paper>
+          <div className="wrapper">
+            <h3 className="wrapper__header">Upcoming Events</h3>
+            <Events />
+          </div>
+        </Grid>
+      </Grid>
+      <div className="wrapper">
+        <h3 className="wrapper__header">Upcoming Events</h3>
+      </div>
+      <Grid container spacing={4}>
+        <Grid item md={3}>
+          <RecentApplicant />
+        </Grid>
+        <Grid item md={3}>
+          <RecentApplicant />
+        </Grid>
+        <Grid item md={3}>
+          <RecentApplicant />
+        </Grid>
+        <Grid item md={3}>
+          <RecentApplicant />
         </Grid>
       </Grid>
     </Container>
